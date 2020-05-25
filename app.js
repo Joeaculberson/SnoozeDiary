@@ -20,7 +20,7 @@ const oidc = new ExpressOIDC({
   issuer: "https://dev-898460.okta.com/oauth2/default",
   client_id: "0oad1g6o1KAarzRZy4x6",
   client_secret: "UshGqBG87U6IU6T8A8T2MWZJ-8UvK81_Na-aQUMg",
-  appBaseUrl: "https://aqueous-sea-93983.herokuapp.com/",
+  appBaseUrl: "https://aqueous-sea-93983.herokuapp.com",
   redirect_uri: 'https://aqueous-sea-93983.herokuapp.com/users/callback',
   scope: "openid profile",
   routes: {
