@@ -1,1 +1,1 @@
-web: node index.js
+web: node snooze_diary/app.js

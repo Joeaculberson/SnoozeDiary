@@ -8,6 +8,7 @@
     "express-generator": "^4.16.0",
     "express-session": "^1.17.1",
     "mocha": "^7.2.0",
+    "morgan": "^1.10.0",
     "pug": "^2.0.4"
   },
   "devDependencies": {},
