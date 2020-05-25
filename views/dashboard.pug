@@ -6,7 +6,21 @@ block variables
 block content
   h2.text-center Dashboard
 
-  .row
-    .offset-sm-2.col-sm-8
-      .jumbotron.text-center.
-        Welcome Snooze Diary, #{user.profile.firstName}.
+  // register form
+  form(method='POST' action='/save')
+    div.form-group
+      label(for='date') Date:
+      input#date(type="date").form-control(type='date', placeholder='new Date()' name='date')
+    div.form-group
+      label(for='fellAsleep') After turning off lights, I feel asleep in ___________ minutes:
+      input#fellAsleep.form-control(type='number', placeholder='' name='fellAsleep')
+    div.form-group
+      label(for='interruptionCount') Last night, my sleep was interrupted ______ times:
+      input#interruptionCount.form-control(type='number' name='interruptionCount')
+    div.form-group
+      label(for='wakeupFeel') When I got up this morning, I felt _______ (1=exhausted, 5 = refreshed)
+      input#wakeupFeel.form-control(type='number' name='wakeupFeel')
+    div.form-group
+      label(for='sleepFeel') Overall, my sleep last night was ________ (1 = very restless, 5 = very sound)
+      input#sleepFeel.form-control(type='number' name='sleepFeel')
+    button.btn.btn-primary(type='submit') Save
