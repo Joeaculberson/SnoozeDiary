@@ -1,1 +1,1 @@
-web: node snooze_diary/app.js
+web: npm start
