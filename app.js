@@ -14,12 +14,12 @@ const usersRouter = require("./routes/users");
 var app = express();
 var oktaClient = new okta.Client({
   orgUrl: 'https://dev-898460.okta.com',
-  token: '00msMiK-YRMdwEeP7rNufvdDd3FmToRxo_KU-vPzUj'
+  token: 'REMOVED'
 });
 const oidc = new ExpressOIDC({
   issuer: "https://dev-898460.okta.com/oauth2/default",
   client_id: "0oad1g6o1KAarzRZy4x6",
-  client_secret: "UshGqBG87U6IU6T8A8T2MWZJ-8UvK81_Na-aQUMg",
+  client_secret: "REMOVED",
   appBaseUrl: "https://snooze-diary.herokuapp.com",
   redirect_uri: 'https://snooze-diary.herokuapp.com/users/callback',
   scope: "openid profile",
@@ -43,7 +43,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
-  secret: 'vUG6-L>7qLIZRpgQnlGD*7fd4ew3&01)jvj_tf:n7f2Lqb%:sNZLHdFQNnG00QdL',
+  secret: 'REMOVED',
   resave: true,
   saveUninitialized: false
 }));
